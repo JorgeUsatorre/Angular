@@ -37,8 +37,8 @@ Angular es un framework de desarrollo de aplicaciones web desarrollado y manteni
 ## Descripción
 
 La Galería Épica es una página web que muestra dos imágeness. Las imágenes tienen efectos de transición cuando pasas el cursor sobre ellas, lo que proporciona una experiencia interactiva al usuario. Además, hay dos contadores que cuenta el número de veces que se han enviado imagenes o fotografias a la página desde que se cargó por primera vez. Estas imagenes cambian cada vez que recargamos la pagina.
-![cap.png](C:\Users\usato\OneDrive\Escritorio\PracticaAngular\src\assets\cap1.png)
-![cap2.png](C:\Users\usato\OneDrive\Escritorio\PracticaAngular\src\assets\cap2.png)
+![cap.png](src/assets/cap1.png)
+![cap2.png](src/assets/cap2.png)
 
 
 ## Contenido
