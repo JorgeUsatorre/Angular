@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Galería Épica!</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://www.formula1.com/etc/designs/fom-website/images/bg-circuits.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      color: #fff; /* Color de texto general */
+    }
+
+    .container {display: flex;justify-content: center;align-items: center;flex-wrap: wrap;padding: 50px 0;
+    }
+
+    .item {flex: 1 0 45%;margin: 20px;border-radius: 20px;overflow: hidden;position: relative;box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .item img {width: 100%;height: 100%;object-fit: cover;transition: transform 0.3s ease;
+    }
+
+    .item:hover img {transform: scale(1.05);
+    }
+
+    .title {position: absolute;bottom: 10px;left: 10px;background-color: rgba(255, 255, 255, 0.7);padding: 10px;border-radius: 10px;font-size: 20px;
+    }
+
+    h1 {font-family: 'Arial Black', sans-serif;font-size: 48px;margin: 20px 0;text-align: center;color: #fff;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .glow {animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+      }
+      to {text-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50;
+      }
+    }
+
+    #contador {color: #000; /* Cambiar color del contador a negro */
+      font-size: 36px; /* Tamaño de fuente del contador */
+      text-align: center; /* Alinear el contador al centro */
+      margin-top: 20px; /* Espacio superior para separar del contenido anterior */
+    }
+  </style>
+</head>
+<body>
+<h1 class="glow">¡Bienvenido a la Galería Épica!</h1>
+
+<div class="container">
+  <div class="item">
+    <img src="https://picsum.photos/600/400" alt="Imagen 1" />
+    <div class="title">Contador:2</div>
+  </div>
+  <div class="item">
+    <img src="https://picsum.photos/600/401" alt="Imagen 2" />
+    <div class="title">Contador:0</div>
+
+  </div>
+</div>
+
+<h2 id="contador">0</h2>
+
+<script>
+  let contador = 0;
+  setInterval(() => {
+    document.getElementById('contador').innerText = ++contador;
+  }, 1000);
+</script>
+</body>
+</html>
